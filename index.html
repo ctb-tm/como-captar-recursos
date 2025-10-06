@@ -3,310 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Clube dos Tenistas da Bahia - Captação de Recursos</title>
+  <title>Clube dos Tenistas da Bahia • Guia Completo de Captação de Recursos</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:800,400&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: #F9FBFF;
-      margin: 0;
-      color: #19305A;
-      overflow-x: hidden;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 38px 54px 24px 54px;
-      background: #f1f7fa;
-    }
-    .big-title {
-      font-size: 3.2rem;
-      font-weight: 800;
-      color: #19305A;
-      margin-bottom: 8px;
-      margin-top: 0;
-      line-height: 1.1;
-      letter-spacing: -1px;
-    }
-    .header-right {
-      text-align: right;
-      min-width: 160px;
-    }
-    .club-name {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #2BA02D;
-      margin-bottom: 2px;
-      margin-top: 6px;
-      text-shadow: 0px 2px 14px #C3FE4D44;
-      letter-spacing: -.5px;
-    }
-    .ods-img {
-      max-width: 100px;
-      margin-top: 14px;
-      border-radius: 14px;
-      box-shadow: 0 1px 12px #19305A14;
-      transition: transform 0.7s cubic-bezier(.25,.46,.45,.94);
-    }
-    .ods-img:hover { transform: scale(1.09) rotate(-1deg);}
-    .infographic-main {
-      display: flex;
-      flex-direction: row;
-      margin-top: 8px;
-      margin-bottom: 32px;
-      margin-left: 4vw;
-      margin-right: 4vw;
-      align-items: flex-start;
-    }
-    .sidebar-img {
-      flex: 0 0 210px;
-      padding: 24px;
-      background: #E8F5E9;
-      border-radius: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2vw;
-      height: 270px;
-      box-shadow: 0 2px 24px #C3FE4D40;
-      transition: box-shadow 0.6s;
-    }
-    .sidebar-img img {
-      max-width: 170px;
-      max-height: 230px;
-      border-radius: 14px;
-      box-shadow: 0 2px 19px #2BA02D22;
-      transition: transform 0.7s cubic-bezier(.25,.46,.45,.94);
-    }
-    .sidebar-img:hover img { transform: scale(1.07) rotate(1.5deg);}
-    .infographic-content {
-      flex: 2 1 630px;
-      background: #e3edfa;
-      border-radius: 20px;
-      padding: 38px 32px;
-      position: relative;
-      box-shadow: 0 2px 24px #19305A22;
-      animation: fadeIn 1.7s cubic-bezier(.27,.46,.45,.94);
-    }
-    @keyframes fadeIn {
-      from { opacity:0; transform: translateY(24px);}
-      to { opacity:1; transform: translateY(0);}
-    }
-    .section-title {
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: #2BA02D;
-      margin-bottom: 16px;
-      margin-top: 32px;
-      letter-spacing: -.5px;
-      text-shadow: 0px 1px 11px #C3FE4D13;
-      transition: color 0.45s;
-    }
-    .section-title:hover { color: #19305A;}
-    .box-highlight {
-      background: #19305A0D;
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 30px;
-      text-align: center;
-      box-shadow: 0 1px 7px #C3FE4D20;
-      transition: box-shadow 0.55s;
-      animation: boxFade 2s cubic-bezier(.27,.46,.45,.94);
-    }
-    @keyframes boxFade {
-      from { opacity:0; }
-      to { opacity:1; }
-    }
-    .box-highlight h2 {
-      color: #2BA02D;
-      font-size: 1.5rem;
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
-    .blue-text {color: #19305A;}
-    .green-detail { color: #2BA02D; font-weight: 700;}
-    .icons-row {
-      display: flex;
-      gap: 33px;
-      justify-content: center;
-      margin: 36px 0 0 0;
-    }
-    .icon-box {
-      width: 76px;
-      height: 76px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #C3FE4D 34%, #E8F5E9 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 7px 34px #2BA02D22;
-      margin-bottom: 8px;
-      transition: box-shadow 0.35s, transform 0.7s cubic-bezier(.25,.46,.45,.94);
-      animation: pulseIcon 2.2s infinite alternate cubic-bezier(.7,.3,.32,.98);
-    }
-    @keyframes pulseIcon {
-      0% { box-shadow: 0 0px 12px #C3FE4D30;}
-      100% { box-shadow: 0 7px 34px #C3FE4D;}
-    }
-    .icon-box svg {
-      width: 36px;
-      height: 36px;
-      color: #19305A;
-      transition: color 0.5s;
-    }
-    .icon-box:hover {box-shadow: 0 23px 48px #2BA02D39; transform: scale(1.13);}
-    .images-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      margin-top: 44px;
-      margin-bottom: 32px;
-      animation: fadeInGallery 1.1s cubic-bezier(.27,.46,.45,.94);
-    }
-    @keyframes fadeInGallery {
-      from { opacity:0; transform: scale(.97);}
-      to { opacity:1; transform: scale(1);}
-    }
-    .gallery-card {
-      background: #f6ffd4;
-      border-radius: 16px;
-      padding: 16px 10px 15px 10px;
-      box-shadow: 0 5px 18px #C3FE4D19;
-      text-align: center;
-      transition: box-shadow 0.38s, transform 0.6s;
-      position: relative;
-      overflow: hidden;
-      animation: slideUpCard 0.7s cubic-bezier(.37,.66,.2,.87);
-    }
-    @keyframes slideUpCard {
-      from { opacity:0; transform: translateY(14px);}
-      to { opacity:1; transform: translateY(0);}
-    }
-    .gallery-card img {
-      width: 100%;
-      border-radius: 9px;
-      object-fit: cover;
-      height: 104px;
-      margin-bottom: 7px;
-      box-shadow: 0 2px 9px #C3FE4D18;
-      transition: transform 0.5s, box-shadow 0.45s;
-    }
-    .gallery-card:hover {
-      box-shadow: 0 18px 45px #2BA02D28;
-      transform: translateY(-8px) scale(1.04);
-    }
-    .gallery-card:hover img {
-      transform: scale(1.05) rotate(-2deg);
-      box-shadow: 0 8px 29px #C3FE4D22;
-    }
-    .gallery-title {
-      font-size: 1.18rem;
-      color: #2BA02D;
-      font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 0;
-      letter-spacing: -.2px;
-    }
-    .bottom-box {
-      background: #19305A09;
-      border-radius: 18px;
-      padding: 40px 0 40px 0;
-      text-align: center;
-    }
-    .bottom-box-text {
-      width: 95vw;
-      margin: 0 auto;
-      color: #19305A;
-      font-size: 1.13rem;
-      padding-top: 4px;
-    }
-    .bottom-box span {
-      color: #2BA02D;
-      font-weight: 700;
-    }
-    .bottom-box strong {color: #19305A;}
-    @media (max-width: 1150px) {
-      .infographic-main {flex-direction: column;align-items: stretch;}
-      .sidebar-img { margin-right:0;margin-bottom:16px;}
-      .images-gallery {grid-template-columns: repeat(2, 1fr);}
-    }
-    @media (max-width: 760px) {
-      header {flex-direction: column;align-items: flex-start; padding:18px 12px;}
-      .big-title {font-size: 1.8rem;}
-      .images-gallery {grid-template-columns: 1fr;}
-    }
+    body {font-family:'Montserrat',Arial,sans-serif;background:#F9FBFF;margin:0;color:#19305A;overflow-x:hidden;}
+    header {display:flex;align-items:flex-start;justify-content:space-between;padding:44px 54px 28px 54px;background:#f1f7fa;}
+    .big-title {font-size:3rem;font-weight:800;color:#19305A;line-height:1.1;margin-bottom:4px;margin-top:0;letter-spacing:-1px;}
+    .header-right {text-align:right;min-width:160px;}
+    .club-name {font-size:1.35rem;font-weight:800;color:#2BA02D;margin-bottom:4px;margin-top:5px;text-shadow:0px 2px 14px #C3FE4D44;}
+    .ods-img {max-width:100px;margin-top:14px;border-radius:14px;box-shadow:0 1px 12px #19305A14;transition:transform 0.7s cubic-bezier(.25,.46,.45,.94);}
+    .ods-img:hover {transform:scale(1.09) rotate(-1deg);}
+    .infographic-main {display:flex;flex-direction:row;margin-top:10px;margin-bottom:32px;margin-left:4vw;margin-right:4vw;align-items:flex-start;}
+    .sidebar-img {flex:0 0 220px;padding:24px;background:#E8F5E9;border-radius:24px;display:flex;align-items:center;justify-content:center;margin-right:2vw;height:270px;box-shadow:0 2px 24px #C3FE4D40;}
+    .sidebar-img img {max-width:180px;max-height:240px;border-radius:14px;box-shadow:0 2px 19px #2BA02D22;transition:transform 0.4s cubic-bezier(.25,.46,.45,.94);}
+    .sidebar-img:hover img {transform:scale(1.08) rotate(1deg);}
+    .infographic-content {flex:2 1 700px;background:#e3edfa;border-radius:20px;padding:40px 38px;box-shadow:0 2px 24px #19305A22;}
+    .section-title {font-size:1.7rem;font-weight:700;color:#2BA02D;margin-bottom:16px;margin-top:32px;letter-spacing:-.5px;text-shadow:0px 1px 11px #C3FE4D13;}
+    .box-highlight {background:#19305A0D;border-radius:16px;padding:28px 24px;margin-bottom:30px;text-align:center;box-shadow:0 1px 7px #C3FE4D20;}
+    .box-highlight h2 {color:#2BA02D;font-size:1.5rem;margin-top:0;margin-bottom:12px;}
+    .blue-text {color:#19305A;}
+    .green-detail { color:#2BA02D;font-weight:700;}
+    .icons-row {display:flex;gap:28px;justify-content:center;margin:48px 0 18px 0;}
+    .icon-box {width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#C3FE4D 34%,#E8F5E9 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 7px 34px #2BA02D22;margin-bottom:8px;transition:box-shadow 0.35s,transform 0.45s;animation:pulseIcon 1.8s infinite alternate cubic-bezier(.7,.3,.32,.98);}
+    @keyframes pulseIcon {0%{box-shadow:0 0px 12px #C3FE4D30;}100%{box-shadow:0 9px 34px #C3FE4D;}}
+    .icon-box svg {width:38px;height:36px;color:#19305A;}
+    .gallery-title {font-size:1.18rem;color:#2BA02D;font-weight:700;margin-top:0;margin-bottom:0;letter-spacing:-.2px;}
+    .images-gallery {display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:44px;margin-bottom:32px;animation:fadeInGallery 0.9s cubic-bezier(.27,.46,.45,.94);}
+    @keyframes fadeInGallery {from{opacity:0;transform:scale(.97);}to{opacity:1;transform:scale(1);}}
+    .gallery-card {background:#f6ffd4;border-radius:16px;padding:14px 8px 13px 8px;box-shadow:0 5px 18px #C3FE4D19;text-align:center;transition:box-shadow 0.28s,transform 0.6s;position:relative;overflow:hidden;}
+    .gallery-card img {width:100%;border-radius:9px;object-fit:cover;height:94px;margin-bottom:7px;box-shadow:0 2px 9px #C3FE4D18;transition:transform 0.5s,box-shadow 0.45s;}
+    .gallery-card:hover {box-shadow:0 20px 40px #2BA02D28;transform:translateY(-7px) scale(1.035);}
+    .gallery-card:hover img {transform:scale(1.07) rotate(-2deg);box-shadow:0 8px 25px #C3FE4D22;}
+    .bottom-box {background:#19305A09;border-radius:16px;padding:32px 0 32px 0;text-align:center;}
+    .bottom-box-text {width:92vw;margin:0 auto;color:#19305A;font-size:1.15rem;padding-top:4px;}
+    .bottom-box span {color:#2BA02D;font-weight:700;}
+    .bottom-box strong {color:#19305A;}
+    @media(max-width:1150px){.infographic-main{flex-direction:column;align-items:stretch;}.sidebar-img{margin-right:0;margin-bottom:16px;}.images-gallery{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:750px){header{flex-direction:column;align-items:flex-start;padding:18px 12px;}.big-title{font-size:1.47rem;}.images-gallery{grid-template-columns:1fr;}.infographic-content{padding:25px 7vw;}}
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h1 class="big-title">Clube dos Tenistas da Bahia: Captação de Recursos e Impacto Social</h1>
-    </div>
-    <div class="header-right">
-      <span class="club-name">Clube dos Tenistas da Bahia</span>
-      <br>
-      <img class="ods-img" src="ods.png" alt="ODS Logo"/>
-    </div>
-  </header>
-  <div class="infographic-main">
-    <aside class="sidebar-img">
-      <img src="ctb.png" alt="Clube dos Tenistas - Logo estilizada">
-    </aside>
-    <section class="infographic-content">
-      <div class="box-highlight">
-        <h2>Missão Azul do CTB</h2>
-        <div class="blue-text">
-          O <span class="green-detail">Clube dos Tenistas da Bahia</span> promove práticas esportivas, inclusão social e sustentabilidade através do tênis, conectando atletas, famílias e comunidade em projetos de impacto e captação inovadora.
-        </div>
-      </div>
-      <div class="section-title">Caminhos para Captação de Recursos</div>
-      <div class="blue-text">
-        - Parcerias com empresas, fundações e órgãos públicos<br>
-        - Crowdfunding, campanhas digitais e editais sociais<br>
-        - Eventos esportivos e educacionais, venda de produtos sociais
-      </div>
-      <div class="section-title">Tecnologia & Inovação</div>
-      <div class="blue-text">
-        Aplicação de plataformas digitais para campanhas, apps, gestão e comunicação com doadores, além de dashboards com relatórios de resultados.
-      </div>
-      <div class="icons-row">
-        <div class="icon-box" title="Sustentabilidade">
-          <svg viewBox="0 0 512 512"><path fill="currentColor" d="M294 16c-53 1-147 44-228 148-45 56-60 125-34 181 26 58 90 94 179 94 62 0 123-17 178-48 94-52 163-163 119-233-44-69-151-142-214-142z"/></svg>
-        </div>
-        <div class="icon-box" title="Inclusão">
-          <svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 320a64 64 0 1 0 0-128 64 64 0 0 0 0 128zm96-192a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm-192 0a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm84 260c-115 0-208 28-208 64v36c0 7 7 12 16 12h384c9 0 16-5 16-12v-36c0-36-93-64-208-64z"/></svg>
-        </div>
-        <div class="icon-box" title="Desenvolvimento">
-          <svg viewBox="0 0 512 512"><circle fill="currentColor" cx="256" cy="160" r="112"/><path fill="currentColor" d="M112 400v40c0 8 7 16 16 16h256c9 0 16-7 16-16v-40l-120-48 120-48v-40c0-8-7-16-16-16H128c-9 0-16 8-16 16v40l120 48-120 48z"/></svg>
-        </div>
-        <div class="icon-box" title="Inovação">
-          <svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 16c-132 0-240 108-240 240s108 240 240 240 240-108 240-240S388 16 256 16zm0 84c44.2 0 80 35.8 80 80s-35.8 80-80 80-80-35.8-80-80 35.8-80 80-80z"/></svg>
-        </div>
-      </div>
-      <div class="section-title">Diversificação & Transparência</div>
-      <div class="blue-text">
-        Diversifique receitas com campanhas, eventos, produtos exclusivos e bolsas de incentivo. Preste contas com relatórios e comunicação transparente em redes e plataformas digitais.
-      </div>
-    </section>
+<header>
+  <div>
+    <h1 class="big-title">Clube dos Tenistas da Bahia: Guia Completo de Captação de Recursos e Impacto Social</h1>
   </div>
-  <div class="bottom-box">
-    <div class="section-title">Galeria CTB</div>
-    <div class="images-gallery">
-      <div class="gallery-card"><img src="ctb1.jpg" alt="Treino Juvenil"><div class="gallery-title">Treino Juvenil</div></div>
-      <div class="gallery-card"><img src="ctb2.jpg" alt="Circuito Verde"><div class="gallery-title">Circuito Verde</div></div>
-      <div class="gallery-card"><img src="ctb3.jpg" alt="Equipe CTB"><div class="gallery-title">Equipe CTB</div></div>
-      <div class="gallery-card"><img src="ctb4.jpg" alt="Inclusão Social"><div class="gallery-title">Inclusão Social</div></div>
-      <div class="gallery-card"><img src="ctb5.jpg" alt="Evento ODS"><div class="gallery-title">Evento ODS</div></div>
-      <div class="gallery-card"><img src="ctb6.jpg" alt="Projetos Escolares"><div class="gallery-title">Projetos Escolares</div></div>
-      <div class="gallery-card"><img src="ctb7.jpg" alt="Sustentabilidade"><div class="gallery-title">Sustentabilidade</div></div>
-      <div class="gallery-card"><img src="ctb8.jpg" alt="Desenvolvimento"><div class="gallery-title">Desenvolvimento</div></div>
-      <div class="gallery-card"><img src="ctb9.jpg" alt="Captação & Impacto"><div class="gallery-title">Captação & Impacto</div></div>
-    </div>
-    <div class="bottom-box-text">
-      <span>Captação de recursos</span> é feita através do <strong>envolvimento comunitário, inovação digital</strong> e integração de atletas e famílias aos projetos sociais e ambientais do clube.<br>
-      Cada ação fortalece a missão de inclusão, educação e sustentabilidade esportiva no estado da Bahia.
-    </div>
+  <div class="header-right">
+    <span class="club-name">Clube dos Tenistas da Bahia</span>
+    <br>
+    <img class="ods-img" src="ods.png" alt="ODS Logo"/>
   </div>
+</header>
+<div class="infographic-main">
+  <aside class="sidebar-img">
+    <img src="ctb.png" alt="Clube dos Tenistas - Logo estilizada">
+  </aside>
+  <section class="infographic-content">
+    <div class="box-highlight">
+      <h2>Missão Azul do CTB</h2>
+      <div class="blue-text">
+        O <span class="green-detail">Clube dos Tenistas da Bahia</span> é referência nacional em práticas esportivas, inclusão social e sustentabilidade, conectando pessoas e comunidades através do tênis e projetos sociais inovadores.
+      </div>
+    </div>
+    <div class="section-title">A Importância da Captação de Recursos</div>
+    <div class="blue-text">
+      As OSCs enfrentam desafios de financiamento para manter seu impacto e fortalecer ações. Captação é habilidade essencial para garantir continuidade, crescimento e ampliação das causas.
+      <strong>Confira os principais segredos e práticas para prosperar:</strong>
+    </div>
+    <div class="section-title">Segredo 1: Conheça Sua Missão e Público-Alvo</div>
+    <div class="blue-text">Compreender profundamente a missão e o público é a base para toda estratégia. Realize revisões regulares e pesquisas, alinhe equipe e comunidade, inspire e seja transparente para crescer.</div>
+    <div class="section-title">Segredo 2: Construa Parcerias Sustentáveis</div>
+    <div class="blue-text">Redes colaborativas com empresas, fundações e outras OSCs ampliam acesso a financiamento, recursos e oportunidades. Benefícios mútuos garantem sustentabilidade e reputação institucional.</div>
+    <div class="section-title">Segredo 3: Utilize Tecnologia a Seu Favor</div>
+    <div class="blue-text">Digitalize campanhas, adote plataformas online, apps, dashboards e integre redes sociais para engajar doadores, prestar contas e multiplicar resultados.</div>
+    <div class="icons-row">
+      <div class="icon-box" title="Sustentabilidade"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M294 16c-53 1-147 44-228 148-45 56-60 125-34 181 26 58 90 94 179 94 62 0 123-17 178-48 94-52 163-163 119-233-44-69-151-142-214-142z"/></svg></div>
+      <div class="icon-box" title="Inclusão"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 320a64 64 0 1 0 0-128 64 64 0 0 0 0 128zm96-192a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm-192 0a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm84 260c-115 0-208 28-208 64v36c0 7 7 12 16 12h384c9 0 16-5 16-12v-36c0-36-93-64-208-64z"/></svg></div>
+      <div class="icon-box" title="Transparência"><svg viewBox="0 0 512 512"><circle fill="currentColor" cx="256" cy="256" r="96"/><path fill="currentColor" d="M432 272c0-44.2-35.8-80-80-80s-80 35.8-80 80 35.8 80 80 80 80-35.8 80-80z"/></svg></div>
+      <div class="icon-box" title="Desenvolvimento"><svg viewBox="0 0 512 512"><circle fill="currentColor" cx="256" cy="160" r="112"/><path fill="currentColor" d="M112 400v40c0 8 7 16 16 16h256c9 0 16-7 16-16v-40l-120-48 120-48v-40c0-8-7-16-16-16H128c-9 0-16 8-16 16v40l120 48-120 48z"/></svg></div>
+      <div class="icon-box" title="Inovação"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 16c-132 0-240 108-240 240s108 240 240 240 240-108 240-240S388 16 256 16zm0 84c44.2 0 80 35.8 80 80s-35.8 80-80 80-80-35.8-80-80 35.8-80 80-80z"/></svg></div>
+    </div>
+    <div class="section-title">Segredo 4: Conte Histórias Autênticas</div>
+    <div class="blue-text">Narrativas reais dos beneficiários criam conexão emocional e engajam apoio. Use vídeos, relatos e imagens para mostrar o impacto concreto dos projetos.</div>
+    <div class="section-title">Segredo 5: Diversifique as Fontes de Receita</div>
+    <div class="blue-text">Promova eventos, campanhas digitais, venda de produtos sociais, editais e fundos. Microdoações, bolsas e parcerias ampliam a sustentabilidade.</div>
+    <div class="section-title">Segredo 6: Promova Transparência e Prestação de Contas</div>
+    <div class="blue-text">Relatórios periódicos, comunicações abertas e dashboards digitais consolidam confiança. Compartilhe resultados e desafios com clareza.</div>
+    <div class="section-title">Segredo 7: Fomente Relacionamentos Contínuos com Doadores</div>
+    <div class="blue-text">Crie programas de fidelidade, grupos exclusivos e comunicações regulares para valorizar, receber feedbacks e atualizar os apoiadores.</div>
+    <div class="section-title">Segredo 8: Explore Campanhas de Coinvestimento</div>
+    <div class="blue-text">Oportunize participação ativa dos doadores, promova campanhas gamificadas e reconheça quem contribui, criando senso de pertencimento.</div>
+    <div class="section-title">Segredo 9: Atualize-se com Tendências e Oportunidades</div>
+    <div class="blue-text">Monitore editais, participe de eventos, workshops e redes de networking para aproveitar oportunidades e manter-se competitivo.</div>
+    <div class="section-title">Segredo 10: Demonstre Impacto Tangível</div>
+    <div class="blue-text">Métricas, depoimentos e relatórios visuais mostram o efeito direto das doações e promovem credibilidade institucional.</div>
+    <div class="section-title">Conclusão: Capacitando a Sociedade Civil para Prosperar</div>
+    <div class="blue-text">
+      Ao seguir esses segredos, o CTB cria ecossistema sustentável, amplia seu legado e entrega impacto social, esportivo e educacional à comunidade. Unidos, elevamos o potencial das causas e transformamos vidas através do esporte e da solidariedade.
+    </div>
+  </section>
+</div>
+<div class="bottom-box">
+  <div class="section-title">Galeria CTB</div>
+  <div class="images-gallery">
+    <div class="gallery-card"><img src="ctb1.jpg" alt="Treino Juvenil"><div class="gallery-title">Treino Juvenil</div></div>
+    <div class="gallery-card"><img src="ctb2.jpg" alt="Circuito Verde"><div class="gallery-title">Circuito Verde</div></div>
+    <div class="gallery-card"><img src="ctb3.jpg" alt="Equipe CTB"><div class="gallery-title">Equipe CTB</div></div>
+    <div class="gallery-card"><img src="ctb4.jpg" alt="Inclusão Social"><div class="gallery-title">Inclusão Social</div></div>
+    <div class="gallery-card"><img src="ctb5.jpg" alt="Evento ODS"><div class="gallery-title">Evento ODS</div></div>
+    <div class="gallery-card"><img src="ctb6.jpg" alt="Projetos Escolares"><div class="gallery-title">Projetos Escolares</div></div>
+    <div class="gallery-card"><img src="ctb7.jpg" alt="Sustentabilidade"><div class="gallery-title">Sustentabilidade</div></div>
+    <div class="gallery-card"><img src="ctb8.jpg" alt="Desenvolvimento"><div class="gallery-title">Desenvolvimento</div></div>
+    <div class="gallery-card"><img src="ctb9.jpg" alt="Captação & Impacto"><div class="gallery-title">Captação & Impacto</div></div>
+  </div>
+  <div class="bottom-box-text">
+    <span>Captação de recursos</span> é feita através do <strong>envolvimento comunitário, inovação digital</strong> e integração de atletas, famílias e equipes sociais.<br>
+    Cada prática fortalece a missão, a inclusão e a sustentabilidade do <strong>Clube dos Tenistas da Bahia</strong>.
+  </div>
+</div>
 </body>
 </html>
