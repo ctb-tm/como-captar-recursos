@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Clube dos Tenistas da Bahia - Infográfico</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #F9FBFF;
+      margin: 0;
+      color: #19305A;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 48px 24px 48px;
+      background: #f1f7fa;
+    }
+    .big-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #19305A;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .header-right {
+      text-align: right;
+    }
+    .club-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #2BA02D;
+    }
+    .ods-img {
+      max-width: 120px;
+      margin-top: 8px;
+    }
+    .infographic-main {
+      display: flex;
+      flex-direction: row;
+      margin-top: 18px;
+      margin-bottom: 32px;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      align-items: flex-start;
+    }
+    .sidebar-img {
+      flex: 0 0 220px;
+      padding: 24px;
+      background: #E8F5E9;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2vw;
+    }
+    .sidebar-img img {
+      max-width: 180px;
+      max-height: 280px;
+      border-radius: 12px;
+      box-shadow: 0 2px 24px #C3FE4D40;
+    }
+    .infographic-content {
+      flex: 2 1 620px;
+      background: #e3edfa;
+      border-radius: 20px;
+      padding: 32px;
+      position: relative;
+      box-shadow: 0 2px 24px #19305A22;
+    }
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #2BA02D;
+      margin-bottom: 16px;
+      margin-top: 28px;
+    }
+    .box-highlight {
+      background: #19305A0D;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      box-shadow: 0 1px 6px #C3FE4D24;
+    }
+    .box-highlight h2 {
+      color: #2BA02D;
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    .blue-text {
+      color: #19305A;
+    }
+    .green-detail {
+      color: #2BA02D;
+      font-weight: 700;
+    }
+    .icons-row {
+      display: flex;
+      gap: 36px;
+      justify-content: center;
+      margin: 28px 0 0 0;
+    }
+    .icon-box {
+      width: 70px;
+      height: 70px;
+      border-radius: 14px;
+      background: #C3FE4D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px #2BA02D22;
+      margin-bottom: 5px;
+    }
+    .icon-box svg {
+      width: 44px;
+      height: 44px;
+      color: #19305A;
+    }
+    .images-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 42px;
+      margin-bottom: 32px;
+    }
+    .gallery-card {
+      background: #f6ffd4;
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 5px 18px #C3FE4D0d;
+      text-align: center;
+    }
+    .gallery-card img {
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      max-height: 100px;
+      margin-bottom: 6px;
+    }
+    .gallery-title {
+      font-size: 1.1rem;
+      color: #2BA02D;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    @media (max-width: 950px) {
+      .infographic-main {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .sidebar-img {
+        margin-right: 0;
+        margin-bottom: 18px;
+        justify-content: center;
+      }
+      .images-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="big-title">Clube dos Tenistas da Bahia: Atitudes, Valores e Impacto</h1>
+    </div>
+    <div class="header-right">
+      <span class="club-name">Clube dos Tenistas da Bahia</span>
+      <br>
+      <img class="ods-img" src="ods.png" alt="ODS Logo"/>
+    </div>
+  </header>
+  <div class="infographic-main">
+    <aside class="sidebar-img">
+      <img src="ctb.png" alt="Clube dos Tenistas - Logo estilizada">
+    </aside>
+    <section class="infographic-content">
+      <div class="box-highlight">
+        <h2>Missão Azul do CTB</h2>
+        <div class="blue-text">
+          O <span class="green-detail">Clube dos Tenistas da Bahia</span> promove práticas esportivas, inclusão social e sustentabilidade através do tênis, conectando atletas, famílias e comunidade em projetos de impacto.
+        </div>
+      </div>
+      <div class="section-title">Valores Institucionais</div>
+      <div class="blue-text">
+        - Empatia e respeito<br>
+        - Integridade e transparência<br>
+        - Compromisso com o desenvolvimento sustentável<br>
+        - Valorização da diversidade
+      </div>
+      <div class="section-title">Destaques de Impacto Social</div>
+      <div class="box-highlight">
+        <span class="green-detail">Projetos:</span>
+        <ul>
+          <li class="blue-text">Tênis nas Escolas: formação esportiva para crianças e jovens.</li>
+          <li class="blue-text">Inclusão pelo Esporte: bolsas para atletas em vulnerabilidade.</li>
+          <li class="blue-text">Circuito Verde: eventos com neutralização de carbono.</li>
+        </ul>
+      </div>
+      <div class="section-title">Tecnologias e Inovações</div>
+      <div class="blue-text">
+        Utilização de plataformas digitais para inscrições, acompanhamento de treinos e resultados, além de parcerias para captação de recursos via crowdfunding.
+      </div>
+      <div class="icons-row">
+        <div class="icon-box" title="Sustentabilidade">
+          <!-- Ícone folha -->
+          <svg viewBox="0 0 512 512"><path fill="currentColor" d="M294 16c-53 1-147 44-228 148-45 56-60 125-34 181 26 58 90 94 179 94 62 0 123-17 178-48 94-52 163-163 119-233-44-69-151-142-214-142z"/></svg>
+        </div>
+        <div class="icon-box" title="Inclusão">
+          <!-- Ícone grupo pessoas -->
+          <svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 320a64 64 0 1 0 0-128 64 64 0 0 0 0 128zm96-192a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm-192 0a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm84 260c-115 0-208 28-208 64v36c0 7 7 12 16 12h384c9 0 16-5 16-12v-36c0-36-93-64-208-64z"/></svg>
+        </div>
+        <div class="icon-box" title="Desenvolvimento">
+          <!-- Ícone medalha -->
+          <svg viewBox="0 0 512 512"><circle fill="currentColor" cx="256" cy="160" r="112"/><path fill="currentColor" d="M112 400v40c0 8 7 16 16 16h256c9 0 16-7 16-16v-40l-120-48 120-48v-40c0-8-7-16-16-16H128c-9 0-16 8-16 16v40l120 48-120 48z"/></svg>
+        </div>
+      </div>
+      <div class="section-title">Histórias de Transformação</div>
+      <div class="blue-text">
+        Conheça relatos inspiradores de jovens e famílias que transformaram suas vidas por meio dos programas CTB. Esses exemplos mostram o efeito duradouro do esporte e da educação.
+      </div>
+    </section>
+  </div>
+  <div style="background:#19305A0D;padding:40px 0;text-align:center;">
+    <div style="width:96vw;margin:0 auto;">
+      <div class="section-title">Galeria CTB</div>
+      <div class="images-gallery">
+        <!-- Sugestão: cada imagem estilizada em formato diferente -->
+        <div class="gallery-card"><img src="ctb1.jpg" alt="Treino juvenil"><div class="gallery-title">Treino Juvenil</div></div>
+        <div class="gallery-card"><img src="ctb2.jpg" alt="Circuito Verde"><div class="gallery-title">Circuito Verde</div></div>
+        <div class="gallery-card"><img src="ctb3.jpg" alt="Equipe CTB"><div class="gallery-title">Equipe CTB</div></div>
+        <div class="gallery-card"><img src="ctb4.jpg" alt="Inclusão Social"><div class="gallery-title">Inclusão Social</div></div>
+        <div class="gallery-card"><img src="ctb5.jpg" alt="Evento ODS"><div class="gallery-title">Evento ODS</div></div>
+        <div class="gallery-card"><img src="ctb6.jpg" alt="Projetos Escolares"><div class="gallery-title">Projetos Escolares</div></div>
+        <div class="gallery-card"><img src="ctb7.jpg" alt="Sustentabilidade"><div class="gallery-title">Sustentabilidade</div></div>
+        <div class="gallery-card"><img src="ctb8.jpg" alt="Desenvolvimento"><div class="gallery-title">Desenvolvimento</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
